@@ -1,2 +1,0 @@
-{{ user.username }} has registered\n
-Good plain morning and welcome!
