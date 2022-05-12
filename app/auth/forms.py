@@ -5,7 +5,6 @@ from wtforms import ValidationError
 from ..models import User
 
 
-
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Length(1, 64), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
@@ -29,5 +28,5 @@ class RegistrationForm(FlaskForm):
             raise ValidationError('Email already registered.')
 
     def validate_username(self, field):
-        if User.query.filter_by(username=field.data).firest():
+        if User.query.filter_by(username=field.data).first():
             raise ValidationError('Username already in use.')
