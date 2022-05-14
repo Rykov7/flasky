@@ -6,7 +6,10 @@
 
 {% block page_content %}
     <div class="page-header">
-        <h1>{{ user.username }}</h1>
+        <img class="img-rounded profile-thumbnail" src="{{ user.gravatar(size=256) }}">
+        <div class="profile-header">
+            <h1>{{ user.username }}</h1>
+
 
         {% if user.name or user.location %}
         <p>
@@ -25,6 +28,7 @@
         <p><a href="mailto:{{ user.email }}">{{ user.email }}</a></p>
         {% endif %}
         {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
+            </div>
         <p>
             Member since {{ moment(user.member_since).format('L') }}.
             Last seen {{ moment(user.last_seen).fromNow() }}.
