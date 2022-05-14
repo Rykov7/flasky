@@ -5,6 +5,7 @@ from itsdangerous import URLSafeTimedSerializer as Serializer
 from flask import current_app
 from datetime import datetime
 
+
 class Permission:
     FOLLOW = 1
     COMMENT = 2
