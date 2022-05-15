@@ -1,5 +1,4 @@
-from datetime import datetime
-from flask import render_template, session, redirect, url_for, flash
+from flask import render_template, redirect, url_for, flash, abort
 from . import main
 from .forms import PostForm, EditProfileForm, EditProfileAdminForm
 from .. import db
@@ -24,8 +23,7 @@ def index():
 @main.route('/user/<username>')
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
-    if user in None:
-        abort(404)
+
     posts = user.posts.order_by(Post.timestamp.desc()).all()
     return render_template('user.html', user=user, posts=posts)
 

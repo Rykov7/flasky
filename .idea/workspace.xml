@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a70ea1c-9694-47bc-9308-93f45b1a77c8" name="Changes" comment="11a">
+    <list default="true" id="8a70ea1c-9694-47bc-9308-93f45b1a77c8" name="Changes" comment="11b">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_posts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-dev.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data-dev.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/prod.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -57,11 +55,11 @@
       <recent name="E:\Projects\Flask\flasky\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\Flask\flasky\requirements" />
       <recent name="E:\Projects\Flask\flasky\app\templates\auth" />
       <recent name="E:\Projects\Flask\flasky\app" />
       <recent name="E:\Projects\Flask\flasky" />
       <recent name="E:\Projects\Flask\flasky\templates\static" />
-      <recent name="E:\Projects\Flask\flasky\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test_user_model.UserModelTestCase">
@@ -263,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652559670355</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="11b">
+      <created>1652617327789</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1652617327789</updated>
+    </task>
+    <task id="LOCAL-00024" summary="11b">
+      <created>1652617333760</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1652617333760</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,6 +322,7 @@
     <MESSAGE value="10b" />
     <MESSAGE value="10d" />
     <MESSAGE value="11a" />
-    <option name="LAST_COMMIT_MESSAGE" value="11a" />
+    <MESSAGE value="11b" />
+    <option name="LAST_COMMIT_MESSAGE" value="11b" />
   </component>
 </project>
