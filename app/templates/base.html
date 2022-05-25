@@ -41,13 +41,6 @@
                 </li>
                 {% endif %}
             </ul>
-
-
-
-
-
-
-
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user.can(Permission.MODERATE) %}
                 <li><a href="#">Moderate Comments</a></li>
@@ -57,10 +50,9 @@
 
                 {% if current_user.is_authenticated %}
             <li class="dropdown">
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-                        <img src="{{ current_user.gravatar(size=18) }}">
-                        Account <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="{{ current_user.gravatar(size=18) }}">
+                &nbsp;{{ current_user.username }} <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                          <li><a href="#">Change Password</a></li>
                         <li><a href="#">Change Email</a></li>
@@ -69,9 +61,6 @@
                     {% else %}
                 <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
                 {% endif %}
-
-
-
 
             </ul>
         </div>
