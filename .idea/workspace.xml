@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a70ea1c-9694-47bc-9308-93f45b1a77c8" name="Changes" comment="12d">
+    <list default="true" id="8a70ea1c-9694-47bc-9308-93f45b1a77c8" name="Changes" comment="13a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/followers.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/followers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-dev.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data-dev.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +27,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="28AN9PMaAA9jbcN0cgUSkt2Nu83" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -357,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653509289794</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="13a">
+      <created>1653592655751</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1653592655751</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,7 +391,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="datetime" />
     <MESSAGE value="DB" />
     <MESSAGE value="6a" />
     <MESSAGE value="7a" />
@@ -415,6 +415,7 @@
     <MESSAGE value="12b" />
     <MESSAGE value="12c" />
     <MESSAGE value="12d" />
-    <option name="LAST_COMMIT_MESSAGE" value="12d" />
+    <MESSAGE value="13a" />
+    <option name="LAST_COMMIT_MESSAGE" value="13a" />
   </component>
 </project>
