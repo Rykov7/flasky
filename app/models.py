@@ -279,7 +279,7 @@ class User(UserMixin, db.Model):
 
     def generate_auth_token(self):
         s = Serializer(current_app.config['SECRET_KEY'])
-        return s.dumps({'id': self.id}).decode('utf-8')
+        return s.dumps({'id': self.id})
 
     @staticmethod
     def verify_auth_token(token):

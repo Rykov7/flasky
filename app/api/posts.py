@@ -26,7 +26,7 @@ def get_posts():
     })
 
 
-@api.route('/posts', methods=['POST'])
+@api.route('/posts/', methods=['POST'])
 @permission_required(Permission.WRITE)
 def new_post():
     post = Post.from_json(request.json)
@@ -52,6 +52,3 @@ def edit_post(id):
     db.session.add(post)
     db.session.commit()
     return jsonify(post.to_json())
-
-
-
