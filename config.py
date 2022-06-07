@@ -19,6 +19,7 @@ class Config:
     FLASKY_COMMENTS_PER_PAGE = 10
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SERVER_NAME = '127.0.0.1:5000'
 
     @staticmethod
     def init_app(app):

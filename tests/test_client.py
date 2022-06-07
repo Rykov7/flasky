@@ -26,7 +26,7 @@ class FlaskClientTestCase(unittest.TestCase):
         # register a new account
         response = self.client.post('/auth/register', data={
             'email': 'john14@example.com',
-            'username': 'john',
+            'username': 'john14',
             'password': 'cat',
             'password2': 'cat'
         })
@@ -38,7 +38,7 @@ class FlaskClientTestCase(unittest.TestCase):
             'password': 'cat'
         }, follow_redirects=True)
         self.assertEqual(response.status_code, 200)
-        self.assertTrue(re.search(r'Hello,\s+john!', response.get_data(as_text=True)))
+        self.assertTrue(re.search(r'Hello,\s+john14!', response.get_data(as_text=True)))
         self.assertTrue(
             'You have not confirmed your account yet' in response.get_data(as_text=True))
 
