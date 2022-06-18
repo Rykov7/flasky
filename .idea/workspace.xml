@@ -2,7 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a70ea1c-9694-47bc-9308-93f45b1a77c8" name="Changes" comment="15c">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flasky.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flasky.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/comments.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/comments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/posts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/fake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/403.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/403.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/_macros.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_macros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/email/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/email/confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/email/confirm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/email/confirm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/unconfirmed.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/unconfirmed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/edit_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/edit_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/edit_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/followers.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/followers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/moderate.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/moderate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flasky.py" beforeDir="false" afterPath="$PROJECT_DIR$/flasky.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/20b74faf6dc4_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/20b74faf6dc4_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/360b4f0d4aca_confirmed.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/360b4f0d4aca_confirmed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/5606afe4b600_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/5606afe4b600_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/69218cfaa8d6_posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/69218cfaa8d6_posts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/727e522b7420_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/727e522b7420_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/8dfe7287d2f6_avatar_hash.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/8dfe7287d2f6_avatar_hash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/ac07d8199077_html_posts.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/ac07d8199077_html_posts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/d67e761131d2_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/d67e761131d2_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/f616e20a6f5d_comments.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/f616e20a6f5d_comments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/f900f5a24791_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/f900f5a24791_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/prod.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/prod.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_basics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_user_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +104,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/Documents/work/Telegram/SimpleBot&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -58,7 +122,28 @@
       <recent name="E:\Projects\Flask\flasky\templates\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_user_model.UserModelTestCase">
+  <component name="RunManager" selected="Python.flasky">
+    <configuration name="flasky" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flasky" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flasky.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_user_model.UserModelTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="flasky" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +174,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.flasky" />
         <item itemvalue="Python tests.Python tests for test_user_model.UserModelTestCase" />
         <item itemvalue="Python tests.Python tests for test_user_model.UserModelTestCase.test_no_password_getter" />
       </list>
