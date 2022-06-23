@@ -4,6 +4,7 @@ from flask_wtf import FlaskForm
 from ..models import Role, User
 from flask_pagedown.fields import PageDownField
 
+
 class EditProfileForm(FlaskForm):
     name = StringField('Real name', validators=[Length(0, 64)])
     location = StringField('Location', validators=[Length(0, 64)])
