@@ -17,7 +17,7 @@ class SeleniumTestCase(unittest.TestCase):
     def setUpClass(cls):
         # start Chrome
         options = webdriver.ChromeOptions()
-        options.add_argument('headless')
+        # options.add_argument('headless')
         try:
             cls.client = webdriver.Chrome(chrome_options=options)
         except:
@@ -46,13 +46,21 @@ class SeleniumTestCase(unittest.TestCase):
         admin = User(email='john14@example.com',
                      username='john14', password='cat',
                      role=admin_role, confirmed=True)
+        db.session.add(admin)
+        db.session.commit()
+
+        # start the Flask server in a thread
+        cls.server_thread = threading.Thread(
+            target=cls.app.run, kwargs={'debug': 'false',
+                                        'user_reloader': False,
+                                        'user_debugger': False})
         cls.server_thread.start()
 
     @classmethod
     def tearDownClass(cls):
         if cls.client:
             # stop the Flask server and the browser
-            cls.client.get('http://localhost:5000/shutdown')
+            cls.client.get('http://127.0.0.1:5000/shutdown')
             cls.client.quit()
             cls.server_thread.join()
 
@@ -72,12 +80,12 @@ class SeleniumTestCase(unittest.TestCase):
 
     def test_admin_home_page(self):
         # navigate to home page
-        self.client.get('http://localhost:5000/')
+        self.client.get('http://127.0.0.1:5000/')
         self.assertTrue(re.search(r'Hello,\sStranger!',
                                   self.client.page_source))
 
         # navigate to login page
-        self.client.find_element(by=By.LINK_TEXT, value='Log In')
+        self.client.find_element(By.LINK_TEXT, 'Log In').click()
         self.assertIn('<h1>Login</h1>', self.client.page_source)
 
         # log in
