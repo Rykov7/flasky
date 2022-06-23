@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a70ea1c-9694-47bc-9308-93f45b1a77c8" name="Changes" comment="HP_upd">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8a70ea1c-9694-47bc-9308-93f45b1a77c8" name="Changes" comment="oren">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-dev.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data-dev.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/Documents/work/Telegram/SimpleBot&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -60,28 +60,7 @@
       <recent name="E:\Projects\Flask\flasky\templates\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.flasky">
-    <configuration name="flasky" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="flasky" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flasky.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_user_model.UserModelTestCase">
     <configuration name="Python tests for test_user_model.UserModelTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="flasky" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +91,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.flasky" />
         <item itemvalue="Python tests.Python tests for test_user_model.UserModelTestCase" />
         <item itemvalue="Python tests.Python tests for test_user_model.UserModelTestCase.test_no_password_getter" />
       </list>
@@ -414,12 +392,12 @@
       <option name="project" value="LOCAL" />
       <updated>1654622499657</updated>
     </task>
-    <task id="LOCAL-00042" summary="HP_upd">
-      <created>1655581694408</created>
+    <task id="LOCAL-00042" summary="oren">
+      <created>1654674754801</created>
       <option name="number" value="00042" />
       <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1655581694408</updated>
+      <updated>1654674754801</updated>
     </task>
     <option name="localTasksCounter" value="43" />
     <servers />
@@ -478,7 +456,7 @@
     <MESSAGE value="15a" />
     <MESSAGE value="15b" />
     <MESSAGE value="15c" />
-    <MESSAGE value="HP_upd" />
-    <option name="LAST_COMMIT_MESSAGE" value="HP_upd" />
+    <MESSAGE value="oren" />
+    <option name="LAST_COMMIT_MESSAGE" value="oren" />
   </component>
 </project>
