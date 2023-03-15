@@ -10,8 +10,8 @@
 {% block page_content %}
 
 <div class="page-header">
-    <h1>Hello,
-{% if current_user.is_authenticated %}{{ current_user.username }}{% else %}Stranger{% endif %}!</h1>
+    <h1>Привет,
+{% if current_user.is_authenticated %}{{ current_user.username }}{% else %}незнакомец{% endif %}!</h1>
 </div>
 
 
@@ -23,9 +23,9 @@
 
 <div class="post-tabs">
     <ul class="nav nav-tabs">
-        <li{% if not show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_all') }}">All</a></li>
+        <li{% if not show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_all') }}">Все</a></li>
         {% if current_user.is_authenticated %}
-        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_followed') }}">Followed</a></li>
+        <li{% if show_followed %} class="active"{% endif %}><a href="{{ url_for('.show_followed') }}">Подписки</a></li>
         {% endif %}
     </ul>
 </div>
