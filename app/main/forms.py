@@ -45,7 +45,7 @@ class EditProfileAdminForm(FlaskForm):
 
 
 class PostForm(FlaskForm):
-    body = PageDownField("О чём думаете? (можете использовать Markdown)", validators=[DataRequired()])
+    body = PageDownField("О чём думаете?", validators=[DataRequired()])
     submit = SubmitField('Отправить')
 
 
