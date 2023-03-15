@@ -14,14 +14,14 @@ class Config:
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
-    FLASKY_MAIL_SENDER = 'Flasky Admin <rykov7ru@gmail.com>'
+    FLASKY_MAIL_SENDER = 'Администрация Flasky <rykov7ru@gmail.com>'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     FLASKY_POSTS_PER_PAGE = 8
     FLASKY_FOLLOWERS_PER_PAGE = 10
     FLASKY_COMMENTS_PER_PAGE = 10
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SERVER_NAME = '127.0.0.1:5000'
+    # SERVER_NAME = '127.0.0.1:5000'
 
     SQLALCHEMY_RECORD_QUERIES = True
     FLASKY_SLOW_DB_QUERY_TIME = 0.5
@@ -46,7 +46,7 @@ class TestingConfig(Config):
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+        'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
 
     @classmethod
     def init_app(cls, app):

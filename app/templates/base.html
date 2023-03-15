@@ -54,8 +54,10 @@
             <img src="{{ current_user.gravatar(size=18) }}">
                 &nbsp;{{ current_user.username }} <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-<!--                         <li><a href="#">Change Password</a></li>-->
-<!--                        <li><a href="#">Change Email</a></li>-->
+
+                        <li><a href="{{ url_for('main.user', username=current_user.username) }}">Профиль</a></li>
+                        <!--<li><a href="#">Сменить пароль</a></li>-->
+                        <!--<li><a href="#">Поменять электронную почту</a></li>-->
                         <li><a href="{{ url_for('auth.logout') }}">Выйти</a></li>
                     </ul></li>
                     {% else %}

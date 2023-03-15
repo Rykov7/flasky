@@ -53,7 +53,7 @@ def edit_profile():
         current_user.about_me = form.about_me.data
         db.session.add(current_user._get_current_object())
         db.session.commit()
-        flash('Your profile has been updated.')
+        flash('Ваш профиль обновлён.')
         return redirect(url_for('.user', username=current_user.username))
     form.name.data = current_user.name
     form.location.data = current_user.location
@@ -77,7 +77,7 @@ def edit_profile_admin(id):
         user.about_me = form.about_me.data
         db.session.add(user)
         db.session.commit()
-        flash('The profile has been updated.')
+        flash('Профиль обновлён.')
         return redirect(url_for('.user', username=user.username))
     form.email.data = user.email
     form.username.data = user.username
@@ -99,7 +99,7 @@ def post(id):
                           author=current_user._get_current_object())
         db.session.add(comment)
         db.session.commit()
-        flash('Your comment has been published.')
+        flash('Ваш комментарий опубликован.')
         return redirect(url_for('.post', id=post.id, page=-1))
     page = request.args.get('page', 1, type=int)
     if page == -1:
@@ -125,7 +125,7 @@ def edit(id):
         post.body = form.body.data
         db.session.add(post)
         db.session.commit()
-        flash('The post has been updated.')
+        flash('Пост обновлён.')
         return redirect(url_for('.post', id=post.id))
     form.body.data = post.body
     return render_template('edit_post.html', form=form)
@@ -137,14 +137,14 @@ def edit(id):
 def follow(username):
     user = User.query.filter_by(username=username).first()
     if user is None:
-        flash('Invalid user.')
+        flash('Некорректный пользователь.')
         return redirect(url_for('.index'))
     if current_user.is_following(user):
-        flash('You are already following this user.')
+        flash('Вы уже подписаны на этого пользователя.')
         return redirect(url_for('.user', username=username))
     current_user.follow(user)
     db.session.commit()
-    flash(f'You are now following {username}')
+    flash(f'Теперь вы подписаны на {username}')
     return redirect(url_for('.user', username=username))
 
 
@@ -154,14 +154,14 @@ def follow(username):
 def unfollow(username):
     user = User.query.filter_by(username=username).first()
     if user is None:
-        flash('Invalid user.')
+        flash('Некорректный пользователь.')
         return redirect(url_for('.index'))
     if current_user.is_following(user) is False:
-        flash("You already unfollowed this user.")
+        flash("Вы уже отписаны от этого пользователя.")
         return redirect(url_for('.index'))
     current_user.unfollow(user)
     db.session.commit()
-    flash('User unfollowed.')
+    flash('Вы отписались.')
     return redirect(url_for('.user', username=username))
 
 
@@ -169,7 +169,7 @@ def unfollow(username):
 def followers(username):
     user = User.query.filter_by(username=username).first()
     if user is None:
-        flash('Invalid user.')
+        flash('Некорректный пользователь.')
         return redirect(url_for('.index'))
     page = request.args.get('page', 1, type=int)
     pagination = user.followers.paginate(
@@ -186,7 +186,7 @@ def followers(username):
 def followed_by(username):
     user = User.query.filter_by(username=username).first()
     if user is None:
-        flash('Invalid user.')
+        flash('Некорректный пользователь.')
         return redirect(url_for('.index'))
     page = request.args.get('page', 1, type=int)
     pagination = user.followed.paginate(
