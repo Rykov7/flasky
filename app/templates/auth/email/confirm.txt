@@ -1,11 +1,11 @@
-Dear {{ user.username }},
+Уважаемый {{ user.username }},
 
-Welcome to Flasky!
+Добро пожаловать на Flasky!
 
-To confirm your account please click on the following link:
+Чтобы подтвердить ваш аккаунт, пожалуйста нажмите на следующую ссылку:
 {{ url_for('auth.confirm', token=token, _external=True) }}
 
-Sincerely,
-The Flasky Team
+Искренне ваша,
+Команда flasky.rykov7.ru
 
-Note: replies to this email address are not monitored.
+Данное письмо составлено роботом, не отвечайте на него.

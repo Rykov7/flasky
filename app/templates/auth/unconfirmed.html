@@ -1,20 +1,20 @@
 {% extends "base.html" %}
 
-{% block title %}Flasky - Confirm your account{% endblock %}
+{% block title %}Flasky - Подтверждение аккаунта{% endblock %}
 
 {% block page_content %}
 <div class="page-header">
     <h1>
-        Hello, {{ current_user.username }}!
+        Привет, {{ current_user.username }}!
     </h1>
-    <h3>You have not confirmed your account yet.</h3>
+    <h3>Ты ещё не подтвердил свой аккаунт.</h3>
     <p>
-        Before you can access this site you need to confirm your account.
-        Check your inbox, you should have received an email with a confirmation link.
+        Перед тем как получить доступ к этому сайту тебе нужно подтвердить свой аккаунт.
+        Проверь почтовый ящик, ты должны получить письмо со ссылкой для подтверждения.
     </p>
     <p>
-        Need another confirmation email?
-        <a href="{{ url_for('auth.resend_confirmation') }}">Click here</a>
+        Нужна повторно отправить письмо для подтверждения?
+        <a href="{{ url_for('auth.resend_confirmation') }}">Нажми здесь</a>
     </p>
 </div>
 {% endblock %}

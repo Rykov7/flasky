@@ -20,7 +20,7 @@ def login():
             if next is None or not next.startswith('/'):
                 next = url_for('main.index')
             return redirect(next)
-        flash('Invalid username or password.')
+        flash('Неверное имя пользователя или пароль.')
     return render_template('auth/login.html', form=form)
 
 
@@ -28,7 +28,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    flash('You have been logged out.')
+    flash('Вы вышли.')
     return redirect(url_for('main.index'))
 
 
@@ -42,9 +42,9 @@ def register():
         db.session.add(user)
         db.session.commit()
         token = user.generate_confirmation_token()
-        send_email(user.email, 'Confirm Your Account',
+        send_email(user.email, 'Подтвердите аккаунт',
                    'auth/email/confirm', user=user, token=token)
-        flash('A confirmation email has been sent to you by email.')
+        flash('Письмо со ссылкой для подтверждения отправлено на вашу электронную почту.')
         return redirect(url_for('auth.login'))
     return render_template('auth/register.html', form=form)
 
@@ -56,9 +56,9 @@ def confirm(token):
         return redirect(url_for('main.index'))
     if current_user.confirm(token):
         db.session.commit()
-        flash('You have confirmed your account. Thanks!')
+        flash('Вы подтвердили свой аккаунт. Спасибо!')
     else:
-        flash('The confirmation link is invalid or has expired.')
+        flash('Ссылка для подтверждения неверная или её срок истёк.')
     return redirect(url_for('main.index'))
 
 
@@ -83,7 +83,7 @@ def unconfirmed():
 @login_required
 def resend_confirmation():
     token = current_user.generate_confirmation_token()
-    send_email(current_user.email, 'Confirm Your Account',
+    send_email(current_user.email, 'Подтверждение аккаунта',
                'auth/email/confirm', user=current_user, token=token)
-    flash('A new confirmation email has been sent to you by email.')
+    flash('Новая ссылка для подтверждения отправлена на вашу электронную почту.')
     return redirect(url_for('main.index'))
