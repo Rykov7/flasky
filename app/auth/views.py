@@ -56,7 +56,7 @@ def confirm(token):
         return redirect(url_for('main.index'))
     if current_user.confirm(token):
         db.session.commit()
-        flash('Вы подтвердили свой аккаунт. Спасибо!')
+        flash('Аккаунт подтверждён. Спасибо!')
     else:
         flash('Ссылка для подтверждения неверная или её срок истёк.')
     return redirect(url_for('main.index'))
